@@ -63,10 +63,6 @@ figure img {
     width: 100%;
 }
 
-aside p img {
-    width: 200px;
-}
-
 h4 {
     font-style: bold;
     text-align: center;
@@ -74,20 +70,20 @@ h4 {
     margin-bottom: 3vh;
 }
 
-aside p:nth-of-type(1) {
+aside p {
     border: 5px double black;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+aside p:nth-of-type(1) {
     font-size: 2.5rem;
     font-weight: bolder;
-    text-align: center;
     padding: 3vh 3vw;
-    margin-bottom: 3vh;
 }
 
 aside p:nth-of-type(2) {
-    border: 5px double black;
-    text-align: center;
     padding: 3vh 2vw;
-    margin-bottom: 3vh;
     font-size: 0.9rem;
 
 }
@@ -110,15 +106,14 @@ aside p:nth-of-type(2) a {
 }
 
 aside p:nth-of-type(3) {
-    border: 5px double black;
     font-size: 3rem;
     font-weight: bolder;
-    text-align: center;
     padding: 3vh 1vw;
-    margin-bottom: 3vh;
 }
 
 aside p:nth-of-type(3) img {
+    width: 200px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
