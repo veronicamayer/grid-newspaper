@@ -5,15 +5,22 @@
     background-color: #e9e9e0;
 }
 
+html {
+    display: grid;
+    grid-template-columns: 1fr 1440px 1fr;
+}
+
 body {
     margin: 3vh 5vw;
+    max-width: 1440px;
+    grid-column-start: 2;
 }
 
 h1 {
     font-weight: bolder;
     text-align: center;
     font-size: 2rem;
-    margin: 3vh auto;
+    margin: 4vh auto;
 }
 
 h1 span {
@@ -42,8 +49,8 @@ h2 {
 
 article {
     display: grid;
-    grid-template: 1fr / repeat(4, 1fr);
-    margin: 3vh 1vw 0 0;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 4vh 1vw 0 0;
 }
 
 div {
@@ -106,14 +113,15 @@ aside p:nth-of-type(2) a {
 }
 
 aside p:nth-of-type(3) {
-    font-size: 3rem;
-    font-weight: bolder;
     padding: 3vh 1vw;
 }
 
 aside p:nth-of-type(3) img {
     width: 90%;
+    object-fit: cover;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
+
 
